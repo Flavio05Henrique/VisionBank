@@ -1,0 +1,15 @@
+C:\Users\Flavio Henrique\Documents\Estudos\C#\VisonBank\VisonBank\bin\Debug\net8.0\VisonBank.exe
+C:\Users\Flavio Henrique\Documents\Estudos\C#\VisonBank\VisonBank\bin\Debug\net8.0\VisonBank.deps.json
+C:\Users\Flavio Henrique\Documents\Estudos\C#\VisonBank\VisonBank\bin\Debug\net8.0\VisonBank.runtimeconfig.json
+C:\Users\Flavio Henrique\Documents\Estudos\C#\VisonBank\VisonBank\bin\Debug\net8.0\VisonBank.dll
+C:\Users\Flavio Henrique\Documents\Estudos\C#\VisonBank\VisonBank\bin\Debug\net8.0\VisonBank.pdb
+C:\Users\Flavio Henrique\Documents\Estudos\C#\VisonBank\VisonBank\obj\Debug\net8.0\VisonBank.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Flavio Henrique\Documents\Estudos\C#\VisonBank\VisonBank\obj\Debug\net8.0\VisonBank.AssemblyInfoInputs.cache
+C:\Users\Flavio Henrique\Documents\Estudos\C#\VisonBank\VisonBank\obj\Debug\net8.0\VisonBank.AssemblyInfo.cs
+C:\Users\Flavio Henrique\Documents\Estudos\C#\VisonBank\VisonBank\obj\Debug\net8.0\VisonBank.csproj.CoreCompileInputs.cache
+C:\Users\Flavio Henrique\Documents\Estudos\C#\VisonBank\VisonBank\obj\Debug\net8.0\VisonBank.sourcelink.json
+C:\Users\Flavio Henrique\Documents\Estudos\C#\VisonBank\VisonBank\obj\Debug\net8.0\VisonBank.dll
+C:\Users\Flavio Henrique\Documents\Estudos\C#\VisonBank\VisonBank\obj\Debug\net8.0\refint\VisonBank.dll
+C:\Users\Flavio Henrique\Documents\Estudos\C#\VisonBank\VisonBank\obj\Debug\net8.0\VisonBank.pdb
+C:\Users\Flavio Henrique\Documents\Estudos\C#\VisonBank\VisonBank\obj\Debug\net8.0\VisonBank.genruntimeconfig.cache
+C:\Users\Flavio Henrique\Documents\Estudos\C#\VisonBank\VisonBank\obj\Debug\net8.0\ref\VisonBank.dll

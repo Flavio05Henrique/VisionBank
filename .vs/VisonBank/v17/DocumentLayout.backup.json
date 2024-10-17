@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Flavio Henrique\\Documents\\Estudos\\C#\\VisonBank\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BA415DEC-CEE6-4D90-BFD0-5F1D69FF65C4}|VisonBank\\VisonBank.csproj|c:\\users\\flavio henrique\\documents\\estudos\\c#\\visonbank\\visonbank\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA415DEC-CEE6-4D90-BFD0-5F1D69FF65C4}|VisonBank\\VisonBank.csproj|solutionrelative:visonbank\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BA415DEC-CEE6-4D90-BFD0-5F1D69FF65C4}|VisonBank\\VisonBank.csproj|c:\\users\\flavio henrique\\documents\\estudos\\c#\\visonbank\\visonbank\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA415DEC-CEE6-4D90-BFD0-5F1D69FF65C4}|VisonBank\\VisonBank.csproj|solutionrelative:visonbank\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,12 +23,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\Flavio Henrique\\Documents\\Estudos\\C#\\VisonBank\\VisonBank\\Account.cs",
+              "RelativeDocumentMoniker": "VisonBank\\Account.cs",
+              "ToolTip": "C:\\Users\\Flavio Henrique\\Documents\\Estudos\\C#\\VisonBank\\VisonBank\\Account.cs",
+              "RelativeToolTip": "VisonBank\\Account.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T18:16:13.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Flavio Henrique\\Documents\\Estudos\\C#\\VisonBank\\VisonBank\\Program.cs",
               "RelativeDocumentMoniker": "VisonBank\\Program.cs",
               "ToolTip": "C:\\Users\\Flavio Henrique\\Documents\\Estudos\\C#\\VisonBank\\VisonBank\\Program.cs",
               "RelativeToolTip": "VisonBank\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwDEAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-17T16:14:31.308Z",
               "EditorCaption": ""
