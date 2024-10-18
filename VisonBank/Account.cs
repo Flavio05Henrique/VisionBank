@@ -16,16 +16,16 @@ namespace VisonBank
         public Account(string name, int agency, float balance)
         {
             this.Holder = name;
-            this.Agency = Agency;
+            this.Agency = agency;
             this.AccountNum = GenerateAccountNum(name, agency);
-            this.Balance = Balance;
+            this.Balance = balance;
         }
 
         private string GenerateAccountNum(string name, int agency)
         {
             char firstChar = name[0];
             char lastChar = name[name.Length - 1];
-            return firstChar + lastChar + agency.ToString();
+            return firstChar.ToString() + lastChar.ToString() + agency.ToString();
         }
 
         public bool Withdraw(float value)

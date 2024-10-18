@@ -1,8 +1,9 @@
 ﻿using VisonBank;
 
 string line = new string('-', 100);
+List<Account> accounts = new List<Account> {new Account("FLA", 1 , 100), new Account("FLA2", 5, 1000) };
 
-void interfaceInitial()
+void InterfaceInitial()
 {
     Console.Clear();
     Console.WriteLine(line);
@@ -10,12 +11,13 @@ void interfaceInitial()
     Console.WriteLine(line);
     Console.WriteLine("{0, -20} {1, 20}","Criar conta", "1");
     Console.WriteLine("{0, -20} {1, 20}", "Login", "2");
+    Console.WriteLine("{0, -20} {1, 20}", "Listar", "3");
     Console.WriteLine("{0, -20} {1, 20}", "Sair", "Qualquer tecla");
     char key = Console.ReadKey().KeyChar;
-    direct(key);
+    Direct(key);
 }
 
-void direct(char key)
+void Direct(char key)
 {
     switch (key)
     {
@@ -26,7 +28,7 @@ void direct(char key)
             Console.WriteLine("dois");
             break;
         case '3':
-            Console.WriteLine("tres");
+            ListAccount();
             break;
         default: Console.WriteLine("Encerando");
             break;
@@ -46,23 +48,56 @@ void createAccountInterface()
     Console.WriteLine("Digite número saldo inicial: ");
     string balance = Console.ReadLine();
     createAccountInterfaceClose(balance, true);
-    Console.WriteLine("Sucesso");
-    Console.WriteLine("Digite qualquer coisa");
-    Console.ReadLine();
-    interfaceInitial();
+    MenssageAndReturn("Sucesso");
+    CreateAccount(name, int.Parse(agenceNum), float.Parse(balance));
+}
+
+void CreateAccount(string name, int agency, float balance)
+{
+    Account act = new Account(name, agency, balance);
+    accounts.Add(act);
 }
 
 void createAccountInterfaceClose(string val, bool isNum)
 {
-    if (val == "end" || val == "") interfaceInitial();
+    if (val == "end" || val == "")
+    {
+        InterfaceInitial();
+    }
+
     if(isNum)
     {
         if(!float.TryParse(val, out float n))
         {
-            interfaceInitial();
+            MenssageAndReturn("Valor inválido");
         }
     }
 
 }
 
-interfaceInitial();
+void ListAccount()
+{
+    if (accounts.Count == 0)
+    {
+        MenssageAndReturn("Lista de contas vazia");
+    }
+    foreach (Account act in accounts)
+    {
+        Console.WriteLine("Tirular: " + act.Holder);
+        Console.WriteLine("Agencia: " + act.Agency);
+        Console.WriteLine("Conta N: " + act.AccountNum);
+        Console.WriteLine("Saldo: " + act.Balance);
+        Console.WriteLine("");
+    }
+}
+
+void MenssageAndReturn(string message)
+{
+    Console.Clear();
+    Console.WriteLine(message);
+    Console.WriteLine("Digite qualquer coisa");
+    Console.ReadLine();
+    InterfaceInitial();
+}
+
+InterfaceInitial();
