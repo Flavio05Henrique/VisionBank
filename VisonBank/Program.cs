@@ -1,39 +1,13 @@
-﻿using VisonBank;
+﻿using VisonBank.Accounts;
+using VisonBank.UserInterfaces;
 
 string line = new string('-', 100);
 List<Account> accounts = new List<Account> {new Account("FLA", 1 , 100), new Account("FLA2", 5, 1000) };
 
-void InterfaceInitial()
-{
-    Console.Clear();
-    Console.WriteLine(line);
-    Console.WriteLine("- Escolha uma opção -");
-    Console.WriteLine(line);
-    Console.WriteLine("{0, -20} {1, 20}","Criar conta", "1");
-    Console.WriteLine("{0, -20} {1, 20}", "Login", "2");
-    Console.WriteLine("{0, -20} {1, 20}", "Listar", "3");
-    Console.WriteLine("{0, -20} {1, 20}", "Sair", "Qualquer tecla");
-    char key = Console.ReadKey().KeyChar;
-    Direct(key);
-}
+HomeInterface homeInterface = new HomeInterface("Escolha uma opção : ");
+homeInterface.Interface();
 
-void Direct(char key)
-{
-    switch (key)
-    {
-        case '1':
-            createAccountInterface();
-            break;
-        case '2':
-            Console.WriteLine("dois");
-            break;
-        case '3':
-            ListAccount();
-            break;
-        default: Console.WriteLine("Encerando");
-            break;
-    }
-}
+//Console.WriteLine(UserInterface.Interfaces.ContainsKey(homeInterface.Title));
 
 void createAccountInterface()
 {
@@ -62,7 +36,7 @@ void createAccountInterfaceClose(string val, bool isNum)
 {
     if (val == "end" || val == "")
     {
-        InterfaceInitial();
+        //InterfaceInitial();
     }
 
     if(isNum)
@@ -97,7 +71,7 @@ void MenssageAndReturn(string message)
     Console.WriteLine(message);
     Console.WriteLine("Digite qualquer coisa");
     Console.ReadLine();
-    InterfaceInitial();
+    //InterfaceInitial();
 }
 
-InterfaceInitial();
+//InterfaceInitial();

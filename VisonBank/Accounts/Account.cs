@@ -4,23 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VisonBank
+namespace VisonBank.Accounts
 {
     internal class Account
     {
-        public string Holder {  get; private set; }
-        public string AccountNum {  get; private set; }
+        public string Holder { get; private set; }
+        public string AccountNum { get; private set; }
         public int Agency { get; private set; }
         public float Balance { get; private set; }
 
         public Account(string name, int agency, float balance)
         {
-            this.Holder = name;
-            this.Agency = agency;
-            this.AccountNum = GenerateAccountNum(name, agency);
-            this.Balance = balance;
+            Holder = name;
+            Agency = agency;
+            AccountNum = GenerateAccountNum(name, agency);
+            Balance = balance;
         }
-
         private string GenerateAccountNum(string name, int agency)
         {
             char firstChar = name[0];
@@ -30,17 +29,17 @@ namespace VisonBank
 
         public bool Withdraw(float value)
         {
-            if (this.Balance == 0 || this.Balance - value <= 0) return false;
-            this.Balance -= value;
+            if (Balance == 0 || Balance - value <= 0) return false;
+            Balance -= value;
             return true;
         }
 
         public bool Deposit(float value)
         {
-            this.Balance += value;
+            Balance += value;
             return true;
         }
 
-       
+
     }
 }
