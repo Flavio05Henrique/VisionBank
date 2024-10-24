@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VisonBank")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+751b07a9ef1fe0e74f09a9efa1f153baaa75d618")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+908cbae8eacfff0e54c3294396379124bd6eb7b1")]
 [assembly: System.Reflection.AssemblyProductAttribute("VisonBank")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VisonBank")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

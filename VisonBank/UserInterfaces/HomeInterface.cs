@@ -9,10 +9,14 @@ namespace VisonBank.UserInterfaces
 {
     internal class HomeInterface : UserInterface
     {
-        private static AccountManager accountManager = new AccountManager();
-        private CreateAccountInterface createAccountInterface = new CreateAccountInterface("Crie sua conta: ", accountManager);
+        private CreateAccountInterface createAccountInterface;
+        private ListAccountsInterface listAccountsInterface;
+        private ExcludeAccountInterface excludeAccountInterface;
         public HomeInterface(string title) : base(title)
         {
+            this.createAccountInterface = new CreateAccountInterface("Crie sua conta: ");
+            this.listAccountsInterface = new ListAccountsInterface("Lista de contas: ");
+            this.excludeAccountInterface = new ExcludeAccountInterface("Ecluindo conta: ");
         }
 
         public override void Interface()
@@ -25,6 +29,8 @@ namespace VisonBank.UserInterfaces
             Console.WriteLine(textPattern, "Listar", "2");
             Console.WriteLine(textPattern, "Excluir conta", "3");
             Console.WriteLine(textPattern, "Sair", "Qualquer tecla");
+
+            Console.WriteLine(accountManager.checkAccountNum("12aa")); 
             char key = Console.ReadKey().KeyChar;
             this.Redirect(key);
         }
@@ -37,38 +43,15 @@ namespace VisonBank.UserInterfaces
                     createAccountInterface.Interface();
                     break;
                 case '2':
-                    ListAccounts();
+                    listAccountsInterface.Interface();
                     break;
                 case '3':
-                    ListAccounts();
+                    excludeAccountInterface.Interface();
                     break;
                 default:
                     Console.WriteLine("Encerando");
                     break;
             }
-        }
-
-        private void ListAccounts()
-        {
-            Console.Clear();
-            if (accountManager.ListLength() > 0)
-            {
-                accountManager.ListAccounts();
-                Console.WriteLine("Click em qualquer tecla para voltar");
-                Console.ReadKey();
-                this.Interface();
-            } else
-            {
-                Console.WriteLine("Não a contas registradas");
-                Console.WriteLine("Click em qualquer tecla para voltar");
-                Console.ReadKey();
-                this.Interface();
-            }
-        }
-
-        private void ExcludeAccount()
-        {
-
         }
     }
 }

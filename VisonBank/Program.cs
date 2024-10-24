@@ -7,6 +7,7 @@ List<Account> accounts = new List<Account> {new Account("FLA", 1 , 100), new Acc
 HomeInterface homeInterface = new HomeInterface("Escolha uma opção : ");
 homeInterface.Interface();
 
+
 //Console.WriteLine(UserInterface.Interfaces.ContainsKey(homeInterface.Title));
 
 void createAccountInterface()

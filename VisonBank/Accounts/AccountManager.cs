@@ -33,16 +33,45 @@ namespace VisonBank.Accounts
             return accounts.Count();
         }
 
-        public void ExcludeAccount(string accontNum)
+        public bool ExcludeAccount(string accontNum)
         {
+            if (!checkAccountNum(accontNum)) return false;
             for (int i = 0; i < accounts.Count; i++)
             {
                 if(accounts[i].AccountNum == accontNum)
                 {
                     accounts.RemoveAt(i);
-                    break;
+                    return true;
                 }
             }
+            return false;
+        }
+
+        public bool checkAccountNum(string accountNum)
+        {
+            bool isValid = true;
+            if(accountNum.Length == 4)
+            {
+                if (!(isLetter(accountNum[0]) && isLetter(accountNum[1]))) isValid = false;
+                if (!(isDigit(accountNum[2]) && isDigit(accountNum[3]))) isValid = false;
+            }
+            return isValid;
+        }
+
+        private bool isLetter(char c)
+        {
+            int valueASCII = (int)c;
+            int l = valueASCII;
+
+            return l >= 65 && l <= 90 || l >= 97 && l <= 122;
+        }
+
+        private bool isDigit(char c)
+        {
+            int valueASCII = (int)c;
+            int l = valueASCII;
+
+            return l >= 48 && l <= 57;
         }
     }
 }

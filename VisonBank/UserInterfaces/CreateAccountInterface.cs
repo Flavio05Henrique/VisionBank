@@ -9,10 +9,8 @@ namespace VisonBank.UserInterfaces
 {
     internal class CreateAccountInterface : UserInterface
     {
-        private AccountManager accountManager;
-        public CreateAccountInterface(string title, AccountManager accm) : base(title)
+        public CreateAccountInterface(string title) : base(title)
         {
-            accountManager = accm;
         }
 
         public override void Interface()
